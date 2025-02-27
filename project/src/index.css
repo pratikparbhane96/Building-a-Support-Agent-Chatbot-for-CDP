@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  @apply bg-gray-900 text-gray-100;
+  overflow: hidden;
+}
+
+/* Improve scrolling for all scrollable elements */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #4b5563 #1f2937;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #1f2937;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #4b5563;
+  border-radius: 4px;
+}
+
+/* Light mode scrollbars */
+.bg-gray-50 *::-webkit-scrollbar-track,
+.bg-white *::-webkit-scrollbar-track {
+  background: #f3f4f6;
+}
+
+.bg-gray-50 *::-webkit-scrollbar-thumb,
+.bg-white *::-webkit-scrollbar-thumb {
+  background-color: #d1d5db;
+}
+
+.bg-gray-50 *,
+.bg-white * {
+  scrollbar-color: #d1d5db #f3f4f6;
+}
+
+/* Ensure all scrollable areas have smooth scrolling */
+.overflow-y-auto,
+.overflow-x-auto,
+.overflow-auto {
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
