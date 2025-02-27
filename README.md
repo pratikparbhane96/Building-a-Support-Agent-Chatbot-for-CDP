@@ -74,3 +74,4 @@ The current implementation uses mock data to simulate responses from documentati
 2. Install dependencies: `npm install`
 3. Start the development server: `npm run dev`
 4. Build for production: `npm run build`
+5. Go in Project folder --->  Go in src folder --> Open the folder in Terminal and type `npm install ` and next `npm run dev`
